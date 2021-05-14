@@ -9,6 +9,7 @@ body {
     margin: auto;
 }
 nav {
+    
     background-color: rgb(18, 18, 18);
     z-index: 2;
 }
@@ -123,14 +124,17 @@ a {
     overflow: hidden;
     border-radius: 10px;
 }
-.slides {
+.carousel-img {
     width: 1000px;
     height: 500px;
-    display: flex;
     border-radius: 10px;
+    justify-content: center;
+    overflow: hidden;
+    display: flex;
 }
-.slides img {
-    width: 1000px;
+.carousel img {
+    width: 100%;
+    display: flex;
     transition: all .5s;
 }
 .slides img:hover {
@@ -263,7 +267,7 @@ a {
 
 #best-selling {
     margin-top: 5rem;
-    background-color: lightgrey;
+    background-color: rgb(230, 230, 230);
     padding-bottom: 5rem;
 }
 .card {
@@ -273,16 +277,18 @@ a {
     border-radius: 10px;
     display: flex; 
     overflow: hidden;
+    border: 0;
 }
 .card-img {
-    width: 100%;
+    height: 20rem;
     border-radius: 10px;
+    justify-content: center;
     overflow: hidden;
+    display: flex;
 }
 .card img {
+    height: 20rem;
     display: flex;
-    justify-content: center;
-    width: 100%;
     transition: all .4s;
 }
 .card img:hover {
@@ -316,14 +322,14 @@ a {
     width: 100%;
     position: absolute;
     height: 5px;
-    background: linear-gradient(to left, rgb(124,222,255) 0%, rgb(76,103,255) 45%,rgb(159,5,197) 90%);
+    background: linear-gradient(to left, rgb(233, 66, 66) 0%, rgb(255, 4, 213) 45%,rgb(184, 3, 255)90%);
     animation: animate 5s linear infinite;
     top: 0;
 }
 .borderfooter {
     width: 100%;
     height: 10px;
-    background: linear-gradient(to right, rgb(124,222,255) 0%, rgb(76,103,255) 45%,rgb(159,5,197) 90%);
+    background: linear-gradient(to right, rgb(233, 66, 66) 0%, rgb(255, 4, 213) 45%,rgb(184, 3, 255)90%);
     animation: animate 5s linear infinite;
 }
 @keyframes animate {
@@ -374,15 +380,12 @@ a {
         width: 700px;
         height: 350px;
     }
-    .slides {
+    .carousel-img {
         width: 700px;
         height: 350px;
     }
     .slides:before {
         height: 350px;
-    }
-    .slides img {
-        width: 700px;
     }
     .slides input {
         display: none;
@@ -411,13 +414,12 @@ a {
     nav ul li{
         width: 100%;
     }
-    /* .card {
-        font-size: 14px;
-        width: 170px;
-    }
     .card-img {
-        height: 200px;
-    } */
+        height: 15rem;
+    }
+    .card img {
+        height: 15rem;
+    }
 }
 @media only screen and (max-width: 767px) {
     .container1{
@@ -430,12 +432,9 @@ a {
         width: 450px;
         height: 240px;
     }
-    .slides {
+    .carousel-img {
         width: 450px;
         height: 240px;
-    }
-    .slides img {
-        width: 450px;
     }
     .footer img {
         width: 10rem;
@@ -446,12 +445,12 @@ a {
     .footer ul li a {
         font-size: 12px;
     }
-    /* .card {
-        width: 130px;
-    }
     .card-img {
-        height: 170px;
-    } */
+        height: 20rem;
+    }
+    .card img {
+        height: 20rem;
+    }
 }
 @media only screen and (max-width: 570px) {
     .container1{
@@ -465,36 +464,25 @@ a {
         width: 100%;
         height: 200px;
     }
-    .slides {
+    .carousel-img {
         width: 100%;
         height: 200px;
+        border-radius: 0;
     }
-    .slides img {
+    .carousel-img img {
+        width: auto;
         height: 100%;
-        justify-content: center;
     }
     .search-box {
         width: 100%;
         border-radius: 0;
     }
-    /* .card {
-        margin: auto;
-        padding: 0;
-        width: 220px;
-        border-radius: 10px;
-        display: flex; 
-    }
+}
+@media only screen and (max-width: 375px) {
     .card-img {
-        width: 100%;
-        height: 270px;
-        border-radius: 10px;
-        display: flex;
-        overflow: hidden;
-        justify-content: center;
+        height: 13rem;
     }
     .card img {
-        width: auto;
-        height: 100%;
-        transition: all .4s;
-    } */
+        height: 13rem;
+    }
 }
