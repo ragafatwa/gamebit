@@ -260,8 +260,11 @@ a {
     transform: scale(0);
     opacity: 0;
 }
-#best-selling .row {
-    
+
+#best-selling {
+    margin-top: 5rem;
+    background-color: lightgrey;
+    padding-bottom: 5rem;
 }
 .card {
     width: 100%;
