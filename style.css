@@ -333,7 +333,7 @@ a {
     animation: animate 5s linear infinite;
 }
 @keyframes animate {
-    0%,100%{
+    0%{
         filter: hue-rotate(0deg);
     }
     50%{
@@ -357,7 +357,7 @@ a {
     color: rgb(254, 254, 254);
 }
 .footer p {
-    font-size: 14px;
+    font-size: 1rem;
     color: rgb(172, 172, 172);
     margin: 0;
 }
@@ -443,6 +443,9 @@ a {
         font-size: 14px;
     }
     .footer ul li a {
+        font-size: 12px;
+    }
+    .footer p {
         font-size: 12px;
     }
     .card-img {
