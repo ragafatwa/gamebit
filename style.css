@@ -127,7 +127,6 @@ a {
 .carousel-img {
     width: 1000px;
     height: 500px;
-    border-radius: 10px;
     justify-content: center;
     overflow: hidden;
     display: flex;
@@ -396,7 +395,7 @@ a {
     .navbar-nav {
         position: absolute;
         right: 0;
-        top: 48px;
+        top: 60px;
         width: 100%;
         flex-direction: row;
         justify-content: space-evenly;
@@ -423,18 +422,25 @@ a {
 }
 @media only screen and (max-width: 767px) {
     .container1{
-        width: 450px;
+        width: 100%;
     }
     .highlight {
-        width: 450px;
+        width: 100%;
+        height: 330px;
+        border-radius: 0;
+    }
+    .search-box input {
+        width: 260px;
     }
     .slider {
-        width: 450px;
-        height: 240px;
+        border-radius: 0;
+        height: 330px;
+        width: 100%;
     }
     .carousel-img {
-        width: 450px;
-        height: 240px;
+        border-radius: 0;
+        height: 330px;
+        width: 100%;
     }
     .footer img {
         width: 10rem;
@@ -463,18 +469,17 @@ a {
         width: 100%;
     }
     .slider {
-        border-radius: 0;
-        width: 100%;
         height: 200px;
     }
     .carousel-img {
-        width: 100%;
         height: 200px;
-        border-radius: 0;
+        display: flex;
+        overflow: hidden;
     }
     .carousel-img img {
         width: auto;
         height: 100%;
+        display: flex;
     }
     .search-box {
         width: 100%;
